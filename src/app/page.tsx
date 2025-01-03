@@ -1,5 +1,5 @@
-import React from 'react';
-import { Trophy, BarChart2, Clock } from 'lucide-react';
+import Image from 'next/image';
+import { BarChart2, Clock } from 'lucide-react';
 
 const CoffeeGolfPage = () => {
   return (
@@ -13,14 +13,26 @@ const CoffeeGolfPage = () => {
                 Coffee Golf achieved seamless iOS user acquisition with mobile web technology
               </h1>
               <p className="text-xl mb-8">
-                Shallot Games leveraged Dotplay's mobile web platform to transform their user acquisition strategy — and quickly exceeded their ROAS targets as a result.
+                Shallot Games leveraged Dotplay&apos;s mobile web platform to transform their user acquisition strategy — and quickly exceeded their ROAS targets as a result.
               </p>
             </div>
             <div className="flex justify-center">
               <div className="relative w-48">
-                <img src="/api/placeholder/200/400" alt="Coffee Golf Mobile Web Screenshot" className="rounded-3xl shadow-2xl" />
+                <Image
+                  src="/api/placeholder/200/400"
+                  alt="Coffee Golf Mobile Web Screenshot"
+                  width={200}
+                  height={400}
+                  className="rounded-3xl shadow-2xl"
+                />
                 <div className="absolute -bottom-4 -right-4 w-12 h-12">
-                  <img src="/api/placeholder/48/48" alt="Coffee Golf App Icon" className="rounded-xl shadow-lg" />
+                  <Image
+                    src="/api/placeholder/48/48"
+                    alt="Coffee Golf App Icon"
+                    width={48}
+                    height={48}
+                    className="rounded-xl shadow-lg"
+                  />
                 </div>
               </div>
             </div>
@@ -33,19 +45,39 @@ const CoffeeGolfPage = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row gap-20">
             <div className="md:w-1/2">
-              <img src="/api/placeholder/150/50" alt="Shallot Games Logo" className="mb-8" />
+              <Image
+                src="/api/placeholder/150/50"
+                alt="Shallot Games Logo"
+                width={150}
+                height={50}
+                className="mb-8"
+              />
               
               <div>
                 <h2 className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">BACKGROUND</h2>
-                <p className="text-lg text-gray-800">Shallot Games, creators of Coffee Golf, is a mobile gaming studio focused on creating engaging casual games. Their titles have achieved significant success on the App Store, with Coffee Golf becoming a standout hit in their portfolio.</p>
+                <p className="text-lg text-gray-800">
+                  Shallot Games, creators of Coffee Golf, is a mobile gaming studio focused on creating engaging casual games. Their titles have achieved significant success on the App Store, with Coffee Golf becoming a standout hit in their portfolio.
+                </p>
               </div>
             </div>
             
             <div className="md:w-1/2 flex justify-center items-center">
               <div className="relative">
-                <img src="/api/placeholder/400/800" alt="Coffee Golf Mobile Web Screenshot" className="rounded-3xl shadow-lg" />
+                <Image
+                  src="/api/placeholder/400/800"
+                  alt="Coffee Golf Mobile Web Screenshot"
+                  width={400}
+                  height={800}
+                  className="rounded-3xl shadow-lg"
+                />
                 <div className="absolute -bottom-4 -right-4 w-16 h-16">
-                  <img src="/api/placeholder/64/64" alt="Coffee Golf App Icon" className="rounded-xl shadow-lg" />
+                  <Image
+                    src="/api/placeholder/64/64"
+                    alt="Coffee Golf App Icon"
+                    width={64}
+                    height={64}
+                    className="rounded-xl shadow-lg"
+                  />
                 </div>
               </div>
             </div>
@@ -61,7 +93,7 @@ const CoffeeGolfPage = () => {
           
           <div className="space-y-8 text-lg text-gray-800">
             <p>
-              Coffee Golf's success on the App Store created a strong foundation, but Shallot Games faced significant challenges in scaling their iOS user acquisition campaigns. The implementation of Apple's SKAN framework introduced complexities in tracking and optimization that made it difficult to achieve their growth targets.
+              Coffee Golf&apos;s success on the App Store created a strong foundation, but Shallot Games faced significant challenges in scaling their iOS user acquisition campaigns. The implementation of Apple&apos;s SKAN framework introduced complexities in tracking and optimization that made it difficult to achieve their growth targets.
             </p>
 
             <p>
@@ -81,14 +113,14 @@ const CoffeeGolfPage = () => {
           <div className="text-center mb-16">
             <h2 className="text-xs font-bold uppercase tracking-wider text-green-600 mb-4">THE SOLUTION</h2>
             <h3 className="text-4xl font-bold mb-12">
-              Dotplay transformed Coffee Golf's iOS UA with instant mobile web gameplay
+              Dotplay transformed Coffee Golf&apos;s iOS UA with instant mobile web gameplay
             </h3>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 text-lg text-gray-800">
               <p>
-                Dotplay's solution centered on creating a mobile web version of Coffee Golf that players could instantly access from ads. This approach eliminated the need for complex SKAN tracking and provided immediate campaign performance data.
+                Dotplay&apos;s solution centered on creating a mobile web version of Coffee Golf that players could instantly access from ads. This approach eliminated the need for complex SKAN tracking and provided immediate campaign performance data.
               </p>
 
               <p>
@@ -127,7 +159,7 @@ const CoffeeGolfPage = () => {
 
           <div className="space-y-6 text-lg text-gray-800 max-w-3xl mx-auto">
             <p>
-              Dotplay's mobile web solution delivered exceptional results for Shallot Games, exceeding their ROAS targets by 20% while eliminating SKAN complexity.
+              Dotplay&apos;s mobile web solution delivered exceptional results for Shallot Games, exceeding their ROAS targets by 20% while eliminating SKAN complexity.
             </p>
             <p>
               The instant gameplay approach led to significantly higher user engagement and more efficient UA spending, creating a sustainable growth model for continued success.
@@ -140,13 +172,15 @@ const CoffeeGolfPage = () => {
       <section className="bg-gray-50 py-20 px-6">
         <div className="container mx-auto max-w-4xl">
           <div className="flex flex-col items-center">
-            <img 
-              src="/api/placeholder/80/80" 
-              alt="Brad Scarboro" 
+            <Image
+              src="/api/placeholder/80/80"
+              alt="Brad Scarboro"
+              width={80}
+              height={80}
               className="rounded-full mb-8 shadow-lg"
             />
             <blockquote className="text-2xl text-center italic text-gray-800 mb-6">
-              "Dotplay's ad solution has exceeded iOS ROAS goals and unlocked the ability for us to scale further. We look forward to expanding our partnership and achieving profitable growth."
+              &quot;Dotplay&apos;s ad solution has exceeded iOS ROAS goals and unlocked the ability for us to scale further. We look forward to expanding our partnership and achieving profitable growth.&quot;
             </blockquote>
             <p className="text-center text-gray-600 font-medium">
               Brad Scarboro, Co-Founder of Shallot Games
